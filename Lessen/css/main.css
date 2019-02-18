@@ -40,7 +40,7 @@ main {
 }
 
 .main_slider {
-  background: url(img/slider_fons.png) no-repeat;
+  background: #000 url(../img/slider_fons.png) no-repeat;
   background-size: cover;
 }
 
