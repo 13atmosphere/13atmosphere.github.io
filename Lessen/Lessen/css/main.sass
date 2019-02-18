@@ -1,0 +1,279 @@
+@import "colors"
+
+body
+    font-family: 'Roboto', sans-serif
+main
+    background: #fff url(../img/main_fons.png) no-repeat
+    background-size: cover
+    padding: 15px 0 10px 0
+
+.phone
+    text-align: right
+    a 
+        font-size: 22px
+        font-weight: 400
+        line-height: 29px
+        letter-spacing: 0.55px
+        text-transform: uppercase
+        text-decoration: none
+        color: $light
+        margin: 10px 0 10px 10px
+    img
+        margin-bottom: 5px
+
+.first-btn
+    font-size: 13px
+    font-weight: 300
+    line-height: 29px
+    color: $light
+    background-color: $btn-color
+    border: none
+    padding: 5px 12px
+    border-radius: 5px
+    margin: 5px 0
+
+
+
+.main
+    &_slider
+        background: url(../img/slider_fons.png) no-repeat
+        background-size: cover
+    &_menu
+        background: url(../img/main_menu.png) no-repeat
+        background-size: cover
+        border-top: 1px solid $rama 
+    &_nav       
+        list-style: none
+        padding: 0
+        display: flex
+        .br
+            padding-left: 13px
+        .bor
+            border-right: 1px solid $rama
+            border-width: 0 1px 0 0
+            border-style: solid 
+            padding-right: 20px
+            padding-left: 13px
+        li 
+            margin: 19px 10px 10px 0
+            
+        a 
+            text-decoration: none
+            color: $light
+            font-size: 17px
+            font-weight: 300
+            line-height: 29px
+            letter-spacing: 0.42px
+            &::after    
+                content: ''
+                display: block
+                width: 100%
+                height: 2px
+                border: 1.5px solid $btn-color
+                color: $btn-color
+                transform: translateY(-50px) scale(0)
+                transition: all 0.2s
+            &:hover
+                color: $btn-color
+                &::after
+                    transform: translateY(-50px) scale(1)
+
+
+.features
+    &-block 
+        text-align: center
+        margin: 176px 0 107px 0
+        h1 
+            color: $light
+            font-family: bold()
+            font-size: 47px
+            font-weight: 700
+            line-height: 49px
+            text-transform: uppercase
+            letter-spacing: 1.18px
+        p 
+            color: $light
+            font-size: 21px
+            font-weight: 400
+            line-height: 24px
+            letter-spacing: 0.53px
+            margin: 34px 0 69px 0
+        button
+            border: 2px solid $light
+            border-radius: 5px
+            background-color: Transparent 
+            padding: 10px 35px
+            font-size: 17px
+            font-weight: 500
+            line-height: 29px
+            text-transform: uppercase
+            letter-spacing: 0.42px
+            color: $light
+
+
+.slick
+    &-active
+        outline: none
+    &-prev
+        &:before
+
+
+.cutaway
+    background-color: $icon-color
+
+.cut
+    &_text
+        margin: 110px 0
+        strong 
+            color: $text
+            font-size: 25px
+            font-weight: 700
+            line-height: 24px
+        p 
+            font-size: 16px
+            font-weight: 300
+            text-align: justify
+            margin-top: 15px
+    &_man
+        margin: 60px 0
+
+
+.headline
+    padding: 60px 0 40px 0
+
+.images
+    display: block
+    margin: 0 auto
+
+.wrap
+    margin: 0 0 92px 0
+    strong
+        color: $text
+        font-family: Bold()
+        font-size: 17px
+        font-weight: 700
+        text-transform: uppercase
+        display: block
+        text-align: center
+        padding: 33px 0 15px 0
+    p 
+        text-align: center
+        font-size: 14px
+        font-weight: 300
+        line-height: 21px
+    form
+        width: 262px
+        height: 374px
+        
+
+
+.storys_slider
+    background-color: $icon-color
+
+.story
+    &_slider
+        margin-bottom: 61px
+    &_block
+        strong
+            font-family: bold()
+            font-size: 17px
+            font-weight: 700
+            text-transform: uppercase
+        p 
+            text-align: justify
+            margin-right: 30px !important
+            font-size: 14px
+            font-weight: 300
+            line-height: 21px
+            margin: 0
+
+
+.news-block
+    img 
+        margin-bottom: 52px
+    strong
+        font-family: bold()
+        font-size: 17px
+        font-weight: 700
+    small
+        color: $small
+        font-size: 14px
+        font-weight: 300
+        line-height: 21px
+        position: absolute
+        right: 15px
+    p 
+        font-size: 13px
+        font-weight: 300
+        line-height: 21px
+        text-align: justify
+        color: $text
+        margin: 10px 0
+    a 
+        color: $btn-color
+        display: block
+        text-align: right
+        text-decoration: underline
+        margin-bottom: 40px
+            
+
+.foot_fons
+    width: 100%  
+    height: 363px
+    background: #fff url(../img/fotter_fons.png) no-repeat
+    background-size: cover
+
+footer
+    background: #fff url(../img/footer.png) no-repeat
+    background-size: cover
+    .ftr
+        padding: 34px 0 15px 0
+        img
+            float: right
+        p 
+            font-family: Thin()
+            font-size: 14px
+            font-weight: 400
+            line-height: 21px
+            color: $footer
+
+.card 
+    width: 262px
+    height: 374px
+    position: relative
+    perspective: 1000px
+
+.front, .back 
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 1s
+    backface-visibility: hidden
+
+.front
+    background-color: $light
+
+.back 
+    transform: rotateY(180deg)
+    strong
+        color: $btn-color
+    a 
+        color: $text
+        display: block
+        text-align: center
+
+.card:hover 
+    .front  
+        transform: rotateY(180deg)
+.card:hover 
+    .back
+        transform: rotateY(360deg)
+        a
+            text-decoration: underline
+            &:hover
+                color: $btn-color
